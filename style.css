@@ -153,19 +153,19 @@
 
     /* ##### Add Form ##### */
     .chat-body .answer-add {
+        text-align: center;
         clear: both;
         position: relative;
         margin: 20px -20px -20px;
-        padding: 5px;
         
     }
     .chat-body .answer-add input {
         font-size: 16px;
         line-height: 20px;
-        padding: 10px 25px;
+        padding: 10px 15px;
         outline: none;
         border: 1px solid #ccc;
-        width: 75%;
+        width: 80%;
         border-radius: 20px;
     }
 
@@ -329,19 +329,19 @@
     }
     /* ##### Add Form ##### */
     .chat-body .answer-add {
+        text-align: center;
         clear: both;
         position: relative;
         margin: 20px -20px -20px;
-        padding: 10px;
         
     }
     .chat-body .answer-add input {
         font-size: 16px;
         line-height: 20px;
-        padding: 10px 25px;
+        padding: 10px 15px;
         outline: none;
         border: 1px solid #ccc;
-        width: 85%;
+        width: 80%;
         border-radius: 20px;
     }
 
@@ -506,20 +506,19 @@
 
     /* ##### Add Form ##### */
     .chat-body .answer-add {
+        text-align: center;
         clear: both;
         position: relative;
         margin: 20px -20px -20px;
-        padding: 20px;
         
     }
-
     .chat-body .answer-add input {
         font-size: 16px;
         line-height: 20px;
-        padding: 10px 25px;
+        padding: 10px 15px;
         outline: none;
         border: 1px solid #ccc;
-        width: 70%;
+        width: 80%;
         border-radius: 20px;
     }
 
@@ -685,20 +684,19 @@
 
     /* ##### Add Form ##### */
     .chat-body .answer-add {
+        text-align: center;
         clear: both;
         position: relative;
         margin: 20px -20px -20px;
-        padding: 20px;
         
     }
-
     .chat-body .answer-add input {
         font-size: 16px;
         line-height: 20px;
-        padding: 10px 25px;
+        padding: 10px 15px;
         outline: none;
         border: 1px solid #ccc;
-        width: 90%;
+        width: 80%;
         border-radius: 20px;
     }
 
@@ -864,20 +862,19 @@
 
     /* ##### Add Form ##### */
     .chat-body .answer-add {
+        text-align: center;
         clear: both;
         position: relative;
         margin: 20px -20px -20px;
-        padding: 20px;
         
     }
-
     .chat-body .answer-add input {
         font-size: 16px;
         line-height: 20px;
-        padding: 10px 25px;
+        padding: 10px 15px;
         outline: none;
         border: 1px solid #ccc;
-        width: 90%;
+        width: 80%;
         border-radius: 20px;
     }
 
@@ -1042,20 +1039,19 @@
 
     /* ##### Add Form ##### */
     .chat-body .answer-add {
+        text-align: center;
         clear: both;
         position: relative;
         margin: 20px -20px -20px;
-        padding: 20px;
         
     }
-
     .chat-body .answer-add input {
         font-size: 16px;
         line-height: 20px;
-        padding: 10px 25px;
+        padding: 10px 15px;
         outline: none;
         border: 1px solid #ccc;
-        width: 90%;
+        width: 80%;
         border-radius: 20px;
     }
 
@@ -1219,19 +1215,19 @@
 
     /* ##### Add Form ##### */
     .chat-body .answer-add {
+        text-align: center;
         clear: both;
         position: relative;
         margin: 20px -20px -20px;
-        padding: 20px;
         
     }
     .chat-body .answer-add input {
         font-size: 16px;
         line-height: 20px;
-        padding: 10px 25px;
+        padding: 10px 15px;
         outline: none;
         border: 1px solid #ccc;
-        width: 90%;
+        width: 80%;
         border-radius: 20px;
     }
 

@@ -17,13 +17,13 @@ let row = 0;
 // ### Add fields 1 ###
 user_1_add_btn.addEventListener('click',(e)=>{
 
-    const field = `<div class="col-10">
+    const field = `<div class="">
                         <div class="my-2">
                             <textarea type="input" class="form-control user_data user_1" id="exampleFormControlInput1" placeholder="Enter User 1"></textarea>
                         </div>   
                     </div>`;
 
-    const deleteBtn = `<div class="col-2"><i class="fa-solid fa-circle-xmark btn btn-danger my-2 delete_btn"></i></div>`;
+    const deleteBtn = `<div class=""><i class="fa-solid fa-circle-xmark btn btn-danger my-2 delete_btn"></i></div>`;
 
     addInput(field,deleteBtn);
 });
@@ -31,13 +31,13 @@ user_1_add_btn.addEventListener('click',(e)=>{
 // ### Add fields 2 ###
 user_2_add_btn.addEventListener('click',(e)=>{
 
-    const field = `<div class="col-10">
+    const field = `<div class="">
                         <div class="my-2">
                             <textarea type="input" class="form-control user_data user_2" id="exampleFormControlInput2" placeholder="Enter User 2"></textarea>
                         </div>   
                     </div>`;
 
-    const deleteBtn = `<div class="col-2"><i class="fa-solid fa-circle-xmark btn btn-danger my-2 delete_btn"></i></div>`;
+    const deleteBtn = `<div class=""><i class="fa-solid fa-circle-xmark btn btn-danger my-2 delete_btn"></i></div>`;
 
     addInput(field,deleteBtn);
    
