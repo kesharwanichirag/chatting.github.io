@@ -1,0 +1,1246 @@
+
+/* ##### Media Queries ##### */
+
+
+@media (max-width: 576px) {  
+    body{
+        background:#fff;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .row.row-broken {
+        padding-bottom: 0;
+    }
+
+    .col-inside-lg {
+        padding: 0px;
+    }
+
+    .chat {
+        overflow: hidden;
+        height: calc(120vh - 180px);
+    }
+
+    /* ##### Chat Body ##### */
+    .user-header span{
+        font-weight: bold;
+        font-size: 22px;
+        margin-left: 10px;
+    }
+
+    .top_nav{
+        border-bottom: 2px solid #ccc;
+    }
+
+    .nav_div{
+        width: 48%;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .nav_div .nav_div_span{
+        display: inline-block;
+        font-size: 15px;
+        margin-top: 35px;
+        font-weight: bold;
+        padding-bottom: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .nav_div_inactive{
+        color: #999;
+    }
+
+    .nav_div_active{
+        color: #682960;
+        border-bottom: 3px solid #682960;
+    }
+
+    .user-header i{
+        font-size: 18px;
+    }
+
+    #popup_btn{
+        float: right;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .chat-body{
+        height: 100%;
+        width: 100%;
+    }
+
+    .chat-body .answer.left {
+        padding: 0 0 0 58px;
+        text-align: left;
+        float: left;
+    }
+
+    .chat-body .answer {
+        user-select: none;
+        position: relative;
+        overflow: hidden;
+        clear: both;
+        word-wrap: break-word;
+        max-width: 70%;
+    }
+
+    .chat-body .answer.left .avatar {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+    }
+
+    .chat .avatar {
+        width: 40px;
+        height: 40px;
+        bottom: 100px;
+    }
+
+    .chat .avatar img {
+        display: block;
+        border-radius: 20px;
+        height: 100%;
+    }
+
+    .chat-body .answer.left .text {
+        background: #ebebeb;
+        border-radius: 0px 8px 8px 0;
+    }
+
+    .chat-body .answer .text {
+        padding: 10px;
+        position: relative;
+    }
+    
+    .chat-body .answer.left .text:before {
+        left: -29px;
+        border-right-color: #ebebeb;
+        border-right-width: 12px;
+    }
+
+    .chat-body .answer .text:before {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        border: 18px solid transparent;
+        border-bottom-width: 0;
+    }
+
+    /* ##### Right ##### */
+    .normal{
+        float: right;
+    }
+
+    .chat-body .answer.right {
+        padding: 0 20px 0 0;
+    }
+
+    .chat-body .answer.right .text {
+        background: #682960;
+        color: #ffffff;
+        border-radius: 8px 0px 0 8px;
+    }
+
+    .chat-body .answer.right .text:before {
+        right: -29px;
+        border-left-color: #682960;
+        border-left-width: 12px;
+    }
+
+    /* ##### Add Form ##### */
+    .chat-body .answer-add {
+        clear: both;
+        position: relative;
+        margin: 20px -20px -20px;
+        padding: 5px;
+        
+    }
+    .chat-body .answer-add input {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 10px 25px;
+        outline: none;
+        border: 1px solid #ccc;
+        width: 75%;
+        border-radius: 20px;
+    }
+
+    .chat-body .answer-add i {
+        font-size: 18px;
+        background-color: #cfcfcf;
+        padding: 13px 17px;
+        border: 1px solid #ccc;
+        margin-left: 1%;
+        border-radius: 100px;
+    }
+}
+
+@media (min-width: 576px) {  
+    body{
+        background:#fff;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .row.row-broken {
+        padding-bottom: 0;
+    }
+
+    .col-inside-lg {
+        padding: 0px;
+    }
+
+    .chat {
+        overflow: hidden;
+        height: calc(120vh - 180px);
+    }
+
+    /* ##### Chat Body ##### */
+    .user-header span{
+        font-weight: bold;
+        font-size: 22px;
+        margin-left: 10px;
+    }
+
+    .top_nav{
+        border-bottom: 2px solid #ccc;
+    }
+
+    .nav_div{
+        width: 48%;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .nav_div .nav_div_span{
+        display: inline-block;
+        font-size: 15px;
+        margin-top: 35px;
+        font-weight: bold;
+        padding-bottom: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .nav_div_inactive{
+        color: #999;
+    }
+
+    .nav_div_active{
+        color: #682960;
+        border-bottom: 3px solid #682960;
+    }
+
+    .user-header i{
+        font-size: 18px;
+    }
+
+    #popup_btn{
+        float: right;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .chat-body{
+        height: 100%;
+        width: 100%;
+    }
+
+    .chat-body .answer.left {
+        padding: 0 0 0 58px;
+        text-align: left;
+        float: left;
+    }
+
+    .chat-body .answer {
+        user-select: none;
+        position: relative;
+        overflow: hidden;
+        clear: both;
+        word-wrap: break-word;
+        max-width: 70%;
+    }
+
+    .chat-body .answer.left .avatar {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+    }
+
+    .chat .avatar {
+        width: 40px;
+        height: 40px;
+        bottom: 100px;
+    }
+
+    .chat .avatar img {
+        display: block;
+        border-radius: 20px;
+        height: 100%;
+    }
+
+    .chat-body .answer.left .text {
+        background: #ebebeb;
+        border-radius: 0px 8px 8px 0;
+    }
+
+    .chat-body .answer .text {
+        padding: 10px;
+        position: relative;
+    }
+    
+    .chat-body .answer.left .text:before {
+        left: -29px;
+        border-right-color: #ebebeb;
+        border-right-width: 12px;
+    }
+
+    .chat-body .answer .text:before {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        border: 18px solid transparent;
+        border-bottom-width: 0;
+    }
+
+    /* ##### Right ##### */
+    .normal{
+        float: right;
+    }
+
+    .chat-body .answer.right {
+        padding: 0 20px 0 0;
+    }
+
+    .chat-body .answer.right .text {
+        background: #682960;
+        color: #ffffff;
+        border-radius: 8px 0px 0 8px;
+    }
+
+    .chat-body .answer.right .text:before {
+        right: -29px;
+        border-left-color: #682960;
+        border-left-width: 12px;
+    }
+    /* ##### Add Form ##### */
+    .chat-body .answer-add {
+        clear: both;
+        position: relative;
+        margin: 20px -20px -20px;
+        padding: 10px;
+        
+    }
+    .chat-body .answer-add input {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 10px 25px;
+        outline: none;
+        border: 1px solid #ccc;
+        width: 85%;
+        border-radius: 20px;
+    }
+
+    .chat-body .answer-add i {
+        font-size: 18px;
+        background-color: #cfcfcf;
+        padding: 13px 17px;
+        border: 1px solid #ccc;
+        margin-left: 1%;
+        border-radius: 100px;
+    }
+}
+
+@media (min-width: 768px) {  
+    body{
+        background:#fff;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .row.row-broken {
+        padding-bottom: 0;
+    }
+
+    .col-inside-lg {
+        padding: 10px;
+    }
+
+    .chat {
+        overflow: hidden;
+        height: calc(120vh - 180px);
+    }
+
+    /* ##### Chat Body ##### */
+    .user-header span{
+        font-weight: bold;
+        font-size: 22px;
+        margin-left: 10px;
+    }
+
+    .top_nav{
+        border-bottom: 2px solid #ccc;
+    }
+
+    .nav_div{
+        width: 48%;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .nav_div .nav_div_span{
+        display: inline-block;
+        font-size: 15px;
+        margin-top: 35px;
+        font-weight: bold;
+        padding-bottom: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .nav_div_inactive{
+        color: #999;
+    }
+
+    .nav_div_active{
+        color: #682960;
+        border-bottom: 3px solid #682960;
+    }
+
+    .user-header i{
+        font-size: 18px;
+    }
+
+    #popup_btn{
+        float: right;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .chat-body{
+        height: 100%;
+        width: 100%;
+    }
+
+    .chat-body .answer.left {
+        padding: 0 0 0 58px;
+        text-align: left;
+        float: left;
+    }
+
+    .chat-body .answer {
+        user-select: none;
+        position: relative;
+        overflow: hidden;
+        clear: both;
+        word-wrap: break-word;
+        max-width: 70%;
+    }
+
+    .chat-body .answer.left .avatar {
+        position: absolute;
+        bottom: 0px;
+        left: 5px;
+    }
+
+    .chat .avatar {
+        width: 40px;
+        height: 40px;
+        bottom: 100px;
+    }
+
+    .chat .avatar img {
+        display: block;
+        border-radius: 20px;
+        height: 100%;
+    }
+
+    .chat-body .answer.left .text {
+        background: #ebebeb;
+        border-radius: 0px 8px 8px 0;
+    }
+
+    .chat-body .answer .text {
+        padding: 10px;
+        position: relative;
+    }
+    
+    .chat-body .answer.left .text:before {
+        left: -29px;
+        border-right-color: #ebebeb;
+        border-right-width: 12px;
+    }
+
+    .chat-body .answer .text:before {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        border: 18px solid transparent;
+        border-bottom-width: 0;
+    }
+
+    /* ##### Right ##### */
+    .normal{
+        float: right;
+    }
+
+    .chat-body .answer.right {
+        padding: 0 20px 0 0;
+    }
+
+    .chat-body .answer.right .text {
+        background: #682960;
+        color: #ffffff;
+        border-radius: 8px 0px 0 8px;
+    }
+
+    .chat-body .answer.right .text:before {
+        right: -29px;
+        border-left-color: #682960;
+        border-left-width: 12px;
+    }
+
+    /* ##### Add Form ##### */
+    .chat-body .answer-add {
+        clear: both;
+        position: relative;
+        margin: 20px -20px -20px;
+        padding: 20px;
+        
+    }
+
+    .chat-body .answer-add input {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 10px 25px;
+        outline: none;
+        border: 1px solid #ccc;
+        width: 70%;
+        border-radius: 20px;
+    }
+
+    .chat-body .answer-add i {
+        font-size: 18px;
+        background-color: #cfcfcf;
+        padding: 13px 17px;
+        border: 1px solid #ccc;
+        margin-left: 1%;
+        border-radius: 100px;
+    }
+}
+
+
+@media (min-width: 992px) {  
+    body{
+        background:#fff;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .row.row-broken {
+        padding-bottom: 0;
+    }
+
+    .col-inside-lg {
+        padding: 20px;
+    }
+
+    .chat {
+        overflow: hidden;
+        height: calc(120vh - 180px);
+    }
+
+    /* ##### Chat Body ##### */
+    .user-header span{
+        font-weight: bold;
+        font-size: 22px;
+        margin-left: 10px;
+    }
+
+    .top_nav{
+        border-bottom: 2px solid #ccc;
+    }
+
+    .nav_div{
+        width: 48%;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .nav_div .nav_div_span{
+        display: inline-block;
+        font-size: 15px;
+        margin-top: 35px;
+        font-weight: bold;
+        padding-bottom: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .nav_div_inactive{
+        color: #999;
+    }
+
+    .nav_div_active{
+        color: #682960;
+        border-bottom: 3px solid #682960;
+    }
+
+    .user-header i{
+        font-size: 18px;
+    }
+
+    #popup_btn{
+        float: right;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .chat-body{
+        height: 100%;
+        width: 100%;
+    }
+
+    .chat-body .answer.left {
+        padding: 0 0 0 58px;
+        text-align: left;
+        float: left;
+    }
+
+    .chat-body .answer {
+        user-select: none;
+        position: relative;
+        overflow: hidden;
+        clear: both;
+        word-wrap: break-word;
+        max-width: 70%;
+    }
+
+    .chat-body .answer.left .avatar {
+        position: absolute;
+        bottom: 0px;
+        left: 5px;
+    }
+
+    .chat .avatar {
+        width: 40px;
+        height: 40px;
+        bottom: 100px;
+    }
+
+    .chat .avatar img {
+        display: block;
+        border-radius: 20px;
+        height: 100%;
+    }
+
+    .chat-body .answer.left .text {
+        background: #ebebeb;
+        border-radius: 0px 8px 8px 0;
+    }
+
+    .chat-body .answer .text {
+        padding: 10px;
+        position: relative;
+    }
+    
+    .chat-body .answer.left .text:before {
+        left: -29px;
+        border-right-color: #ebebeb;
+        border-right-width: 12px;
+    }
+
+    .chat-body .answer .text:before {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        border: 18px solid transparent;
+        border-bottom-width: 0;
+    }
+
+    /* ##### Right ##### */
+    .normal{
+        float: right;
+    }
+
+    .chat-body .answer.right {
+        padding: 0 20px 0 0;
+    }
+
+    .chat-body .answer.right .text {
+        background: #682960;
+        color: #ffffff;
+        border-radius: 8px 0px 0 8px;
+    }
+
+    .chat-body .answer.right .text:before {
+        right: -29px;
+        border-left-color: #682960;
+        border-left-width: 12px;
+    }
+
+    /* ##### Add Form ##### */
+    .chat-body .answer-add {
+        clear: both;
+        position: relative;
+        margin: 20px -20px -20px;
+        padding: 20px;
+        
+    }
+
+    .chat-body .answer-add input {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 10px 25px;
+        outline: none;
+        border: 1px solid #ccc;
+        width: 90%;
+        border-radius: 20px;
+    }
+
+    .chat-body .answer-add i {
+        font-size: 18px;
+        background-color: #cfcfcf;
+        padding: 13px 17px;
+        border: 1px solid #ccc;
+        margin-left: 1%;
+        border-radius: 100px;
+    }
+}
+
+
+@media (min-width: 1200px) {  
+    body{
+        background:#fff;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .row.row-broken {
+        padding-bottom: 0;
+    }
+
+    .col-inside-lg {
+        padding: 20px;
+    }
+
+    .chat {
+        overflow: hidden;
+        height: calc(120vh - 180px);
+    }
+
+    /* ##### Chat Body ##### */
+    .user-header span{
+        font-weight: bold;
+        font-size: 22px;
+        margin-left: 10px;
+    }
+
+    .top_nav{
+        border-bottom: 2px solid #ccc;
+    }
+
+    .nav_div{
+        width: 48%;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .nav_div .nav_div_span{
+        display: inline-block;
+        font-size: 15px;
+        margin-top: 35px;
+        font-weight: bold;
+        padding-bottom: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .nav_div_inactive{
+        color: #999;
+    }
+
+    .nav_div_active{
+        color: #682960;
+        border-bottom: 3px solid #682960;
+    }
+
+    .user-header i{
+        font-size: 18px;
+    }
+
+    #popup_btn{
+        float: right;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .chat-body{
+        height: 100%;
+        width: 100%;
+    }
+
+    .chat-body .answer.left {
+        padding: 0 0 0 58px;
+        text-align: left;
+        float: left;
+    }
+
+    .chat-body .answer {
+        user-select: none;
+        position: relative;
+        overflow: hidden;
+        clear: both;
+        word-wrap: break-word;
+        max-width: 70%;
+    }
+
+    .chat-body .answer.left .avatar {
+        position: absolute;
+        bottom: 0px;
+        left: 5px;
+    }
+
+    .chat .avatar {
+        width: 40px;
+        height: 40px;
+        bottom: 100px;
+    }
+
+    .chat .avatar img {
+        display: block;
+        border-radius: 20px;
+        height: 100%;
+    }
+
+    .chat-body .answer.left .text {
+        background: #ebebeb;
+        border-radius: 0px 8px 8px 0;
+    }
+
+    .chat-body .answer .text {
+        padding: 10px;
+        position: relative;
+    }
+    
+    .chat-body .answer.left .text:before {
+        left: -29px;
+        border-right-color: #ebebeb;
+        border-right-width: 12px;
+    }
+
+    .chat-body .answer .text:before {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        border: 18px solid transparent;
+        border-bottom-width: 0;
+    }
+
+    /* ##### Right ##### */
+    .normal{
+        float: right;
+    }
+
+    .chat-body .answer.right {
+        padding: 0 20px 0 0;
+    }
+
+    .chat-body .answer.right .text {
+        background: #682960;
+        color: #ffffff;
+        border-radius: 8px 0px 0 8px;
+    }
+
+    .chat-body .answer.right .text:before {
+        right: -29px;
+        border-left-color: #682960;
+        border-left-width: 12px;
+    }
+
+    /* ##### Add Form ##### */
+    .chat-body .answer-add {
+        clear: both;
+        position: relative;
+        margin: 20px -20px -20px;
+        padding: 20px;
+        
+    }
+
+    .chat-body .answer-add input {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 10px 25px;
+        outline: none;
+        border: 1px solid #ccc;
+        width: 90%;
+        border-radius: 20px;
+    }
+
+    .chat-body .answer-add i {
+        font-size: 18px;
+        background-color: #cfcfcf;
+        padding: 13px 17px;
+        border: 1px solid #ccc;
+        margin-left: 1%;
+        border-radius: 100px;
+    }
+}
+
+@media (min-width: 1400px) {  
+    body{
+        background:#fff;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .row.row-broken {
+        padding-bottom: 0;
+    }
+
+    .col-inside-lg {
+        padding: 20px;
+    }
+
+    .chat {
+        overflow: hidden;
+        height: calc(120vh - 180px);
+    }
+
+    /* ##### Chat Body ##### */
+    .user-header span{
+        font-weight: bold;
+        font-size: 22px;
+        margin-left: 10px;
+    }
+
+    .top_nav{
+        border-bottom: 2px solid #ccc;
+    }
+
+    .nav_div{
+        width: 48%;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .nav_div .nav_div_span{
+        display: inline-block;
+        font-size: 15px;
+        margin-top: 35px;
+        font-weight: bold;
+        padding-bottom: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .nav_div_inactive{
+        color: #999;
+    }
+
+    .nav_div_active{
+        color: #682960;
+        border-bottom: 3px solid #682960;
+    }
+
+    .user-header i{
+        font-size: 18px;
+    }
+
+    #popup_btn{
+        float: right;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .chat-body{
+        height: 100%;
+        width: 100%;
+    }
+
+    .chat-body .answer.left {
+        padding: 0 0 0 58px;
+        text-align: left;
+        float: left;
+    }
+
+    .chat-body .answer {
+        user-select: none;
+        position: relative;
+        overflow: hidden;
+        clear: both;
+        word-wrap: break-word;
+        max-width: 70%;
+    }
+
+    .chat-body .answer.left .avatar {
+        position: absolute;
+        bottom: 0px;
+        left: 5px;
+    }
+
+    .chat .avatar {
+        width: 40px;
+        height: 40px;
+        bottom: 100px;
+    }
+
+    .chat .avatar img {
+        display: block;
+        border-radius: 20px;
+        height: 100%;
+    }
+
+    .chat-body .answer.left .text {
+        background: #ebebeb;
+        border-radius: 0px 8px 8px 0;
+    }
+
+    .chat-body .answer .text {
+        padding: 10px;
+        position: relative;
+    }
+    
+    .chat-body .answer.left .text:before {
+        left: -29px;
+        border-right-color: #ebebeb;
+        border-right-width: 12px;
+    }
+
+    .chat-body .answer .text:before {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        border: 18px solid transparent;
+        border-bottom-width: 0;
+    }
+
+    /* ##### Right ##### */
+    .normal{
+        float: right;
+    }
+
+    .chat-body .answer.right {
+        padding: 0 20px 0 0;
+    }
+
+    .chat-body .answer.right .text {
+        background: #682960;
+        color: #ffffff;
+        border-radius: 8px 0px 0 8px;
+    }
+
+    .chat-body .answer.right .text:before {
+        right: -29px;
+        border-left-color: #682960;
+        border-left-width: 12px;
+    }
+
+    /* ##### Add Form ##### */
+    .chat-body .answer-add {
+        clear: both;
+        position: relative;
+        margin: 20px -20px -20px;
+        padding: 20px;
+        
+    }
+
+    .chat-body .answer-add input {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 10px 25px;
+        outline: none;
+        border: 1px solid #ccc;
+        width: 90%;
+        border-radius: 20px;
+    }
+
+    .chat-body .answer-add i {
+        font-size: 18px;
+        background-color: #cfcfcf;
+        padding: 13px 17px;
+        border: 1px solid #ccc;
+        margin-left: 1%;
+        border-radius: 100px;
+    }
+}
+
+@media (max-width: 1400px) {  
+    body{
+        background:#fff;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .row.row-broken {
+        padding-bottom: 0;
+    }
+
+    .col-inside-lg {
+        padding: 20px;
+    }
+
+    .chat {
+        overflow: hidden;
+        height: calc(120vh - 180px);
+    }
+
+    /* ##### Chat Body ##### */
+    .user-header span{
+        font-weight: bold;
+        font-size: 22px;
+        margin-left: 10px;
+    }
+
+    .top_nav{
+        border-bottom: 2px solid #ccc;
+    }
+
+    .nav_div{
+        width: 48%;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .nav_div .nav_div_span{
+        display: inline-block;
+        font-size: 15px;
+        margin-top: 35px;
+        font-weight: bold;
+        padding-bottom: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .nav_div_inactive{
+        color: #999;
+    }
+
+    .nav_div_active{
+        color: #682960;
+        border-bottom: 3px solid #682960;
+    }
+
+    .user-header i{
+        font-size: 18px;
+    }
+
+    #popup_btn{
+        float: right;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .chat-body{
+        height: 100%;
+        width: 100%;
+    }
+
+    .chat-body .answer.left {
+        padding: 0 0 0 58px;
+        text-align: left;
+        float: left;
+    }
+
+    .chat-body .answer {
+        position: relative;
+        overflow: hidden;
+        clear: both;
+        word-wrap: break-word;
+        max-width: 70%;
+    }
+
+    .chat-body .answer.left .avatar {
+        position: absolute;
+        bottom: 0px;
+        left: 5px;
+    }
+
+    .chat .avatar {
+        width: 40px;
+        height: 40px;
+        bottom: 100px;
+    }
+
+    .chat .avatar img {
+        display: block;
+        border-radius: 20px;
+        height: 100%;
+    }
+
+    .chat-body .answer.left .text {
+        background: #ebebeb;
+        border-radius: 0px 8px 8px 0;
+    }
+
+    .chat-body .answer .text {
+        padding: 10px;
+        position: relative;
+    }
+    
+    .chat-body .answer.left .text:before {
+        left: -29px;
+        border-right-color: #ebebeb;
+        border-right-width: 12px;
+    }
+
+    .chat-body .answer .text:before {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        border: 18px solid transparent;
+        border-bottom-width: 0;
+    }
+
+    /* ##### Right ##### */
+    .normal{
+        float: right;
+    }
+
+    .chat-body .answer.right {
+        padding: 0 20px 0 0;
+    }
+
+    .chat-body .answer.right .text {
+        background: #682960;
+        color: #ffffff;
+        border-radius: 8px 0px 0 8px;
+    }
+
+    .chat-body .answer.right .text:before {
+        right: -29px;
+        border-left-color: #682960;
+        border-left-width: 12px;
+    }
+
+    /* ##### Add Form ##### */
+    .chat-body .answer-add {
+        clear: both;
+        position: relative;
+        margin: 20px -20px -20px;
+        padding: 20px;
+        
+    }
+    .chat-body .answer-add input {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 10px 25px;
+        outline: none;
+        border: 1px solid #ccc;
+        width: 90%;
+        border-radius: 20px;
+    }
+
+    .chat-body .answer-add i {
+        font-size: 18px;
+        background-color: #cfcfcf;
+        padding: 13px 17px;
+        border: 1px solid #ccc;
+        margin-left: 1%;
+        border-radius: 100px;
+    }
+}
