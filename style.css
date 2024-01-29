@@ -18,10 +18,15 @@
     }
 
     /* ##### Chat Body ##### */
+
+    .user-header{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
     .user-header span{
         font-weight: bold;
         font-size: 22px;
-        margin-left: 10px;
     }
 
     .top_nav{
@@ -203,6 +208,11 @@
     }
 
     /* ##### Chat Body ##### */
+    .user-header{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
     .user-header span{
         font-weight: bold;
         font-size: 22px;
@@ -386,6 +396,11 @@
     }
 
     /* ##### Chat Body ##### */
+    .user-header{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
     .user-header span{
         font-weight: bold;
         font-size: 22px;
@@ -572,6 +587,11 @@
     }
 
     /* ##### Chat Body ##### */
+    .user-header{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
     .user-header span{
         font-weight: bold;
         font-size: 22px;
@@ -757,6 +777,11 @@
     }
 
     /* ##### Chat Body ##### */
+    .user-header{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
     .user-header span{
         font-weight: bold;
         font-size: 22px;
@@ -942,6 +967,11 @@
     }
 
     /* ##### Chat Body ##### */
+    .user-header{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
     .user-header span{
         font-weight: bold;
         font-size: 22px;
@@ -1125,6 +1155,11 @@
     }
 
     /* ##### Chat Body ##### */
+    .user-header{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
     .user-header span{
         font-weight: bold;
         font-size: 22px;
