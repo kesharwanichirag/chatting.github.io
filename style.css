@@ -12,10 +12,6 @@
         padding-bottom: 0;
     }
 
-    .col-inside-lg {
-        padding: 0px;
-    }
-
     .chat {
         overflow: hidden;
         height: calc(120vh - 180px);
@@ -201,10 +197,6 @@
         padding-bottom: 0;
     }
 
-    .col-inside-lg {
-        padding: 0px;
-    }
-
     .chat {
         overflow: hidden;
         height: calc(120vh - 180px);
@@ -386,10 +378,6 @@
     
     .row.row-broken {
         padding-bottom: 0;
-    }
-
-    .col-inside-lg {
-        padding: 10px;
     }
 
     .chat {
@@ -577,9 +565,6 @@
         padding-bottom: 0;
     }
 
-    .col-inside-lg {
-        padding: 20px;
-    }
 
     .chat {
         overflow: hidden;
@@ -764,10 +749,6 @@
     
     .row.row-broken {
         padding-bottom: 0;
-    }
-
-    .col-inside-lg {
-        padding: 20px;
     }
 
     .chat {
@@ -955,10 +936,6 @@
         padding-bottom: 0;
     }
 
-    .col-inside-lg {
-        padding: 20px;
-    }
-
     .chat {
         overflow: hidden;
         height: calc(120vh - 180px);
@@ -1140,10 +1117,6 @@
     
     .row.row-broken {
         padding-bottom: 0;
-    }
-
-    .col-inside-lg {
-        padding: 20px;
     }
 
     .chat {

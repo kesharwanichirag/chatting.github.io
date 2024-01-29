@@ -59,8 +59,6 @@ const deleteInput = (index)=>{
     const user_data = Array.from(document.querySelectorAll(".user_data")); 
     
     user_data.splice(index,1);
-
-    console.log(user_data);
 };
 
 users_records.addEventListener('click',(e)=>{
@@ -84,7 +82,7 @@ let saveChats = (userDatas)=>{
     userDatas.forEach((data)=>{
         
         if(data.value.trim()==0){
-            console.log("enter data");
+            alert("enter data");
         }else{
             let task = localStorage.getItem("user");
 
@@ -147,7 +145,6 @@ const showChats = ()=>{
     let data;
 
 	taskObj.forEach((obj,index)=>{
-        console.log(index);
         if(obj.userId != null){
             if(obj.userId == 1){
                     let textWithLinkCheck = checkLinks(obj.userId,obj.message);
@@ -158,9 +155,7 @@ const showChats = ()=>{
                                                 <div class="text" ondblclick="likeMessages(${index})">
                                                     ${textWithLinkCheck}
                                                 </div>
-                                            </div>`
-
-                   console.log(textWithLinkCheck);                     
+                                            </div>`                   
                 
             }
 
