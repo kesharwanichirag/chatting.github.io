@@ -40,7 +40,6 @@ user_2_add_btn.addEventListener('click',(e)=>{
     const deleteBtn = `<div class=""><i class="fa-solid fa-circle-xmark btn btn-danger my-2 delete_btn"></i></div>`;
 
     addInput(field,deleteBtn);
-   
 });
 
 // ### method for Adding ###
@@ -70,7 +69,6 @@ users_records.addEventListener('click',(e)=>{
     }else{
         console.log(e.target);
     }
-
 });
 
 //### save chats ###
@@ -117,6 +115,24 @@ let saveChats = (userDatas)=>{
     showChats();
 };
 
+// ### Check Links in Messages ####
+const checkLinks = (userId,text)=>{
+    var urlRegex = /(https?:\/\/[^\s]+)/g;
+
+    if(userId == 1){
+        return text.replace(urlRegex, function(url) {
+            return '<a class="links_left" href="' + url + '">' + url + '</a>';
+        })
+    }else if(userId == 2){
+        return text.replace(urlRegex, function(url) {
+            return '<a class="links_right" href="' + url + '">' + url + '</a>';
+        })
+    }else{
+        console.log('No User Id');
+    }
+    
+}
+
 // ### show Chats in UI ###
 const showChats = ()=>{
     messages.innerHTML = '';
@@ -134,32 +150,25 @@ const showChats = ()=>{
         console.log(index);
         if(obj.userId != null){
             if(obj.userId == 1){
-                if(obj.liked == true){
-                    messages.innerHTML += `<div class="answer left my-1">
-                                                
-                                                <div class="avatar">
-                                                    <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="User name">
-                                                </div>
-                                                <div class="text" ondblclick="likeMessages(${index})">
-                                                    <span class="text_msg_left">${obj.message}</span>
-                                                </div>
-                                            </div>`
-                }else{
+                    let textWithLinkCheck = checkLinks(obj.userId,obj.message);
                     messages.innerHTML += `<div class="answer left my-1">
                                                 <div class="avatar">
-                                                    <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="User name">
+                                                    <img src="lakshman.jpg" alt="User name">
                                                 </div>
                                                 <div class="text" ondblclick="likeMessages(${index})">
-                                                    ${obj.message}
+                                                    ${textWithLinkCheck}
                                                 </div>
                                             </div>`
-                }
+
+                   console.log(textWithLinkCheck);                     
+                
             }
 
             if(obj.userId == 2){
+                let textWithLinkCheck = checkLinks(obj.userId,obj.message);
                 messages.innerHTML += `<div class="answer right normal my-1">
                                                 <div class="text" ondblclick="likeMessages(${index})">
-                                                    ${obj.message}
+                                                    ${textWithLinkCheck}
                                                 </div>
                                             </div>`
             }
