@@ -50,7 +50,7 @@ user_2_add_btn.addEventListener('click',(e)=>{
 break_add_btn.addEventListener('click',(e)=>{
     const field = `<div class="">
                         <div class="my-2">
-                            <input type="input" class="my-2 form-control user_data d_t" id="exampleFormControlInput3" placeholder="Enter Day & Time">
+                            <input type="input" class="my-2 form-control user_data d_t" id="exampleFormControlInput3" placeholder="Enter Day/time">
                         </div>   
                     </div>`;
 
@@ -128,9 +128,6 @@ let saveChats = (userDatas)=>{
             user.savedTime = new Date().getTime();
             
             taskObj.push(user);
-
-            console.log("User",user);
-            console.log("Object",taskObj);
 
             localStorage.setItem("user",JSON.stringify(taskObj));
             data.value = "";
@@ -211,6 +208,8 @@ const showChats = ()=>{
         }
 	});
 };
+
+// #### likes and dislike Messages
 
 const likeMessages = (index)=>{
     let task = localStorage.getItem("user");
