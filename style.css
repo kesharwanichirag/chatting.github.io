@@ -190,6 +190,17 @@
         color: #fff;
         text-decoration: underline;
     }
+    /* #### Date Times ##### */
+
+    .date_times {
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        clear: both;
+        font-size: 13px;
+        color: #666;
+        position: relative;
+    }
 }
 
 @media (min-width: 576px) {  
@@ -377,6 +388,18 @@
     .links_right{
         color: #fff;
         text-decoration: underline;
+    }
+
+    /* #### Date Times ##### */
+
+    .date_times {
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        clear: both;
+        font-size: 13px;
+        color: #666;
+        position: relative;
     }
 }
 
@@ -566,6 +589,18 @@
     .links_right{
         color: #fff;
         text-decoration: underline;
+    }
+
+    /* #### Date Times ##### */
+
+    .date_times {
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        clear: both;
+        font-size: 13px;
+        color: #666;
+        position: relative;
     }
 }
 
@@ -758,6 +793,18 @@
         color: #fff;
         text-decoration: underline;
     }
+
+    /* #### Date Times ##### */
+
+    .date_times {
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        clear: both;
+        font-size: 13px;
+        color: #666;
+        position: relative;
+    }
 }
 
 
@@ -949,6 +996,18 @@
         color: #fff;
         text-decoration: underline;
     }
+
+    /* #### Date Times ##### */
+
+    .date_times {
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        clear: both;
+        font-size: 13px;
+        color: #666;
+        position: relative;
+    }
 }
 
 @media (min-width: 1400px) {  
@@ -1136,6 +1195,30 @@
     .links_right{
         color: #fff;
         text-decoration: underline;
+    }
+
+    /* #### Date Times ##### */
+
+    .date_times {
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        clear: both;
+        font-size: 13px;
+        color: #666;
+        position: relative;
+    }
+
+    /* #### Date Times ##### */
+
+    .date_times {
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        clear: both;
+        font-size: 13px;
+        color: #666;
+        position: relative;
     }
 }
 
@@ -1325,5 +1408,17 @@
     .links_right{
         color: #fff;
         text-decoration: underline;
+    }
+
+    /* #### Date Times ##### */
+
+    .date_times {
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        clear: both;
+        font-size: 13px;
+        color: #666;
+        position: relative;
     }
 }

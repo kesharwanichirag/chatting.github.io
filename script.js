@@ -1,6 +1,9 @@
 const user_1_add_btn = document.querySelector("#user_1_add_btn");
 const user_2_add_btn = document.querySelector("#user_2_add_btn");
+const break_add_btn = document.querySelector("#break_add_btn");
+
 const users_records = document.querySelector("#users_records");
+
 const messages = document.querySelector("#messages");
 
 // ### User Object
@@ -8,7 +11,8 @@ let user = {
     userId: "" ,
     message: "",
     savedTime:"",
-    liked: false
+    liked: false,
+    dateTime:""
 }
 
 // ### Counter ###
@@ -34,6 +38,19 @@ user_2_add_btn.addEventListener('click',(e)=>{
     const field = `<div class="">
                         <div class="my-2">
                             <textarea type="input" class="form-control user_data user_2" id="exampleFormControlInput2" placeholder="Enter User 2"></textarea>
+                        </div>   
+                    </div>`;
+
+    const deleteBtn = `<div class=""><i class="fa-solid fa-circle-xmark btn btn-danger my-2 delete_btn"></i></div>`;
+
+    addInput(field,deleteBtn);
+});
+
+// #### Add Break #####
+break_add_btn.addEventListener('click',(e)=>{
+    const field = `<div class="">
+                        <div class="my-2">
+                            <input type="input" class="my-2 form-control user_data d_t" id="exampleFormControlInput3" placeholder="Enter Day & Time">
                         </div>   
                     </div>`;
 
@@ -94,16 +111,26 @@ let saveChats = (userDatas)=>{
 
             if(data.className == 'form-control user_data user_1'){
                 user.userId = 1;
+                user.message = data.value;
+                user.dateTime = "";
             }else if(data.className == 'form-control user_data user_2'){
                 user.userId = 2;
+                user.message = data.value;
+                user.dateTime = "";
+            }else if(data.className == "my-2 form-control user_data d_t"){
+                user.userId = 3;
+                user.dateTime = data.value;
+                user.message = "";
             }else{
-                console.log("null User Id");
+                console.log("...... Not Found .....");
             }
             
-            user.message = data.value;
             user.savedTime = new Date().getTime();
             
             taskObj.push(user);
+
+            console.log("User",user);
+            console.log("Object",taskObj);
 
             localStorage.setItem("user",JSON.stringify(taskObj));
             data.value = "";
@@ -147,15 +174,15 @@ const showChats = ()=>{
 	taskObj.forEach((obj,index)=>{
         if(obj.userId != null){
             if(obj.userId == 1){
-                    let textWithLinkCheck = checkLinks(obj.userId,obj.message);
-                    messages.innerHTML += `<div class="answer left my-1">
-                                                <div class="avatar">
-                                                    <img src="lakshman.jpg" alt="User name">
-                                                </div>
-                                                <div class="text" ondblclick="likeMessages(${index})">
-                                                    ${textWithLinkCheck}
-                                                </div>
-                                            </div>`                   
+                let textWithLinkCheck = checkLinks(obj.userId,obj.message);
+                messages.innerHTML += `<div class="answer left my-1">
+                                            <div class="avatar">
+                                                <img src="lakshman.jpg" alt="User name">
+                                            </div>
+                                            <div class="text" ondblclick="likeMessages(${index})">
+                                                ${textWithLinkCheck}
+                                            </div>
+                                        </div>`                   
                 
             }
 
@@ -166,6 +193,17 @@ const showChats = ()=>{
                                                     ${textWithLinkCheck}
                                                 </div>
                                             </div>`
+            }
+
+            if(obj.userId == 3){
+                const before = timeBeforeSpace(obj.dateTime);
+                const after = timeAfterSpace(obj.dateTime);
+                messages.innerHTML += `<div class="my-1 row date_times">
+                                            <div class="col">
+                                                ${before} ${after}
+                                            </div>
+                                        </div>`
+
             }
 
         }else{
@@ -185,6 +223,21 @@ const likeMessages = (index)=>{
 	}
 
     localStorage.setItem("user",JSON.stringify(taskObj));
+};
+
+// #### Date & time ####
+
+const timeBeforeSpace = (dateTime)=>{
+    const beforeTime = dateTime.substring(0, dateTime.indexOf('/'));
+    const html = `<span style ="font-weight:620;">${beforeTime}</span>`;
+
+    return html;
+};
+
+const timeAfterSpace = (dateTime)=>{
+    const afterTime = dateTime.slice(dateTime.lastIndexOf('/') + 1);
+    const html = `<span style ="font-weight:normal;">${afterTime}</span>`;
+    return html;
 };
 
 //### On load ###
