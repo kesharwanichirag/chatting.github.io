@@ -71,6 +71,31 @@ const addInput = (field,deleteBtn)=>{
 
 };
 
+// #### Delete Chat #####
+
+const deleteTask = (index)=>{
+	let userO = localStorage.getItem("user");
+
+	let userObj = JSON.parse(userO);
+
+	userObj.splice(index,1);
+	localStorage.setItem("user",JSON.stringify(userObj));
+
+	showChats();
+};
+
+const showDeleteBtn = (index)=>{
+    const deleteBtns = Array.from(document.querySelectorAll(".delete_msg"));
+    console.log(deleteBtns[index]);
+    deleteBtns[index].style.display = 'block';
+};
+
+const hideDeleteBtn = (index)=>{
+    const deleteBtns = Array.from(document.querySelectorAll(".delete_msg"));
+    console.log(deleteBtns[index]);
+    deleteBtns[index].style.display = 'none';  
+}
+
 // #### Delete Fields ####
 const deleteInput = (index)=>{
     const user_data = Array.from(document.querySelectorAll(".user_data")); 
@@ -176,8 +201,12 @@ const showChats = ()=>{
                                             <div class="avatar">
                                                 <img src="lakshman.jpg" alt="User name">
                                             </div>
-                                            <div class="text" ondblclick="likeMessages(${index})">
+                                            <div class="text" onmouseover="showDeleteBtn(${index})" onmouseout="hideDeleteBtn(${index})" ondblclick="likeMessages(${index})">
                                                 ${textWithLinkCheck}
+
+                                                <span class="delete_msg msg_m" onclick="deleteTask(${index})">
+                                                    <i class="fa fa-times"></i>
+                                                </span>
                                             </div>
                                         </div>`                   
                 
@@ -186,19 +215,26 @@ const showChats = ()=>{
             if(obj.userId == 2){
                 let textWithLinkCheck = checkLinks(obj.userId,obj.message);
                 messages.innerHTML += `<div class="answer right normal my-1">
-                                                <div class="text" ondblclick="likeMessages(${index})">
-                                                    ${textWithLinkCheck}
-                                                </div>
-                                            </div>`
+                                            <div class="text" onmouseover="showDeleteBtn(${index})" onmouseout="hideDeleteBtn(${index})" ondblclick="likeMessages(${index})">
+                                                ${textWithLinkCheck}
+                                                <span class="delete_msg msg_m" onclick="deleteTask(${index})">
+                                                    <i class="fa fa-times"></i>
+                                                </span>
+                                            </div>
+                                            
+                                        </div>`
             }
 
             if(obj.userId == 3){
                 const before = timeBeforeSpace(obj.dateTime);
                 const after = timeAfterSpace(obj.dateTime);
-                messages.innerHTML += `<div class="my-1 row date_times">
-                                            <div class="col">
+                messages.innerHTML += `<div class="my-1 date_times">
+                                            <div class="" onclick="showDeleteBtn(${index})" ondblclick="hideDeleteBtn(${index})">
                                                 ${before} ${after}
                                             </div>
+                                            <span class="delete_msg center_" onclick="deleteTask(${index})">
+                                                <i class="fa fa-times"></i>
+                                            </span>
                                         </div>`
 
             }
