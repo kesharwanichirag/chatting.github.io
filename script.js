@@ -10,9 +10,9 @@ const messages = document.querySelector("#messages");
 let user = {
     userId: "" ,
     message: "",
-    savedTime:"",
+    savedTime: "",
     liked: false,
-    dateTime:""
+    dateTime: ""
 }
 
 // ### Counter ###
@@ -72,7 +72,6 @@ const addInput = (field,deleteBtn)=>{
 };
 
 // #### Delete Chat #####
-
 const deleteTask = (index)=>{
 	let userO = localStorage.getItem("user");
 
@@ -190,39 +189,71 @@ const showChats = ()=>{
 	}else{
 		taskObj = JSON.parse(task);
 	}
-    
-    let data;
 
 	taskObj.forEach((obj,index)=>{
         if(obj.userId != null){
             if(obj.userId == 1){
                 let textWithLinkCheck = checkLinks(obj.userId,obj.message);
-                messages.innerHTML += `<div class="answer left my-1">
-                                            <div class="avatar">
-                                                <img src="lakshman.jpg" alt="User name">
-                                            </div>
-                                            <div class="text" onmouseover="showDeleteBtn(${index})" onmouseout="hideDeleteBtn(${index})" ondblclick="likeMessages(${index})">
-                                                ${textWithLinkCheck}
 
-                                                <span class="delete_msg msg_m" onclick="deleteTask(${index})">
-                                                    <i class="fa fa-times"></i>
-                                                </span>
+                if(obj.liked == false){
+                    messages.innerHTML += `<div class="answer left my-1">
+                                                <div class="avatar">
+                                                    <img src="lakshman.jpg" alt="User name">
+                                                </div>
+                                                <div class="text" onmouseover="showDeleteBtn(${index})" onmouseout="hideDeleteBtn(${index})" ondblclick="likeMessages(${index})" onclick="removeLike(${index})">
+                                                    ${textWithLinkCheck}
+                                                    <span class="delete_msg msg_m" onclick="deleteTask(${index})">
+                                                        <i class="fa fa-times"></i>
+                                                    </span>
+                                                </div>
+                                            </div>`    
+                }else{
+                    messages.innerHTML += `<div class="answer left my-1">
+                                                <div class="avatar">
+                                                    <img src="lakshman.jpg" alt="User name">
+                                                </div>
+                                                <div class="text" onmouseover="showDeleteBtn(${index})" onmouseout="hideDeleteBtn(${index})" ondblclick="likeMessages(${index})" onclick="removeLike(${index})">
+                                                    ${textWithLinkCheck}
+                                                    <span class="delete_msg msg_m" onclick="deleteTask(${index})">
+                                                        <i class="fa fa-times"></i>
+                                                    </span>
+                                                </div>
                                             </div>
-                                        </div>`                   
+                                            <div class="liked_msg_left">
+                                                <i class="fa-solid fa-heart"></i>
+                                            </div>
+                                           ` 
+                }
                 
             }
 
             if(obj.userId == 2){
                 let textWithLinkCheck = checkLinks(obj.userId,obj.message);
-                messages.innerHTML += `<div class="answer right normal my-1">
-                                            <div class="text" onmouseover="showDeleteBtn(${index})" onmouseout="hideDeleteBtn(${index})" ondblclick="likeMessages(${index})">
-                                                ${textWithLinkCheck}
-                                                <span class="delete_msg msg_m" onclick="deleteTask(${index})">
-                                                    <i class="fa fa-times"></i>
-                                                </span>
+
+                if(obj.liked == false){
+                    messages.innerHTML += `<div class="answer right normal my-1">
+                                                <div class="text" onmouseover="showDeleteBtn(${index})" onmouseout="hideDeleteBtn(${index})" ondblclick="likeMessages(${index})" onclick="removeLike(${index})">
+                                                    ${textWithLinkCheck}
+                                                    <span class="delete_msg msg_m" onclick="deleteTask(${index})">
+                                                        <i class="fa fa-times"></i>
+                                                    </span>
+                                                </div>
+                                            </div>`
+                }else{
+                    messages.innerHTML += `<div class="answer right normal my-1">
+                                                <div class="text" onmouseover="showDeleteBtn(${index})" onmouseout="hideDeleteBtn(${index})" ondblclick="likeMessages(${index})" onclick="removeLike(${index})">
+                                                    ${textWithLinkCheck}
+                                                    <span class="delete_msg msg_m" onclick="deleteTask(${index})">
+                                                        <i class="fa fa-times"></i>
+                                                    </span>
+                                                </div>
                                             </div>
-                                            
-                                        </div>`
+                                            <div class="liked_msg_right">
+                                                <i class="fa-solid fa-heart"></i>
+                                            </div>
+                                            `
+                }
+                
             }
 
             if(obj.userId == 3){
@@ -236,7 +267,6 @@ const showChats = ()=>{
                                                 <i class="fa fa-times"></i>
                                             </span>
                                         </div>`
-
             }
 
         }else{
@@ -246,7 +276,6 @@ const showChats = ()=>{
 };
 
 // #### likes and dislike Messages
-
 const likeMessages = (index)=>{
     let task = localStorage.getItem("user");
 
@@ -258,10 +287,26 @@ const likeMessages = (index)=>{
 	}
 
     localStorage.setItem("user",JSON.stringify(taskObj));
+
+    showChats();
+};
+
+const removeLike = (index)=>{
+    let task = localStorage.getItem("user");
+
+	if(task == null){
+		taskObj = [];
+	}else{
+		taskObj = JSON.parse(task);
+        taskObj[index].liked = false;
+	}
+
+    localStorage.setItem("user",JSON.stringify(taskObj));
+
+    showChats();
 };
 
 // #### Date & time ####
-
 const timeBeforeSpace = (dateTime)=>{
     const beforeTime = dateTime.substring(0, dateTime.indexOf('/'));
     const html = `<span style ="font-weight:620;">${beforeTime}</span>`;

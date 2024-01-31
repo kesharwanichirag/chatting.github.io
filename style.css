@@ -133,6 +133,41 @@
         border-bottom-width: 0;
     }
 
+     /* ######## liked_msg ########### */
+
+     .liked_msg_left{
+        position: relative;
+        left: 65px;
+        bottom: 15px;
+        clear: both; 
+    }
+
+    .liked_msg_left i {
+        font-size: 13px;
+        padding: 4px;
+        color: red;
+        background-color: wheat;
+        border: 2px solid #fff;
+        border-radius: 100px;
+    }
+
+    .liked_msg_right{
+        position: relative;
+        float: right;
+        bottom: 15px;
+        right: 20px;
+        clear: both; 
+    }
+
+    .liked_msg_right i {
+        font-size: 13px;
+        padding: 4px;
+        color: red;
+        background-color: wheat;
+        border: 2px solid #fff;
+        border-radius: 100px;
+    }
+
     /* ##### Right ##### */
     .normal{
         float: right;
@@ -359,6 +394,41 @@
         bottom: 0;
         border: 18px solid transparent;
         border-bottom-width: 0;
+    }
+
+     /* ######## liked_msg ########### */
+
+     .liked_msg_left{
+        position: relative;
+        left: 65px;
+        bottom: 15px;
+        clear: both; 
+    }
+
+    .liked_msg_left i {
+        font-size: 13px;
+        padding: 4px;
+        color: red;
+        background-color: wheat;
+        border: 2px solid #fff;
+        border-radius: 100px;
+    }
+
+    .liked_msg_right{
+        position: relative;
+        float: right;
+        bottom: 15px;
+        right: 20px;
+        clear: both; 
+    }
+
+    .liked_msg_right i {
+        font-size: 13px;
+        padding: 4px;
+        color: red;
+        background-color: wheat;
+        border: 2px solid #fff;
+        border-radius: 100px;
     }
 
     /* ##### Right ##### */
@@ -588,6 +658,41 @@
         bottom: 0;
         border: 18px solid transparent;
         border-bottom-width: 0;
+    }
+
+     /* ######## liked_msg ########### */
+
+     .liked_msg_left{
+        position: relative;
+        left: 65px;
+        bottom: 15px;
+        clear: both; 
+    }
+
+    .liked_msg_left i {
+        font-size: 13px;
+        padding: 4px;
+        color: red;
+        background-color: wheat;
+        border: 2px solid #fff;
+        border-radius: 100px;
+    }
+
+    .liked_msg_right{
+        position: relative;
+        float: right;
+        bottom: 15px;
+        right: 20px;
+        clear: both; 
+    }
+
+    .liked_msg_right i {
+        font-size: 13px;
+        padding: 4px;
+        color: red;
+        background-color: wheat;
+        border: 2px solid #fff;
+        border-radius: 100px;
     }
 
     /* ##### Right ##### */
@@ -821,6 +926,41 @@
         border-bottom-width: 0;
     }
 
+     /* ######## liked_msg ########### */
+
+     .liked_msg_left{
+        position: relative;
+        left: 65px;
+        bottom: 15px;
+        clear: both; 
+    }
+
+    .liked_msg_left i {
+        font-size: 13px;
+        padding: 4px;
+        color: red;
+        background-color: wheat;
+        border: 2px solid #fff;
+        border-radius: 100px;
+    }
+
+    .liked_msg_right{
+        position: relative;
+        float: right;
+        bottom: 15px;
+        right: 20px;
+        clear: both; 
+    }
+
+    .liked_msg_right i {
+        font-size: 13px;
+        padding: 4px;
+        color: red;
+        background-color: wheat;
+        border: 2px solid #fff;
+        border-radius: 100px;
+    }
+
     /* ##### Right ##### */
     .normal{
         float: right;
@@ -1049,6 +1189,41 @@
         bottom: 0;
         border: 18px solid transparent;
         border-bottom-width: 0;
+    }
+
+     /* ######## liked_msg ########### */
+
+     .liked_msg_left{
+        position: relative;
+        left: 65px;
+        bottom: 15px;
+        clear: both; 
+    }
+
+    .liked_msg_left i {
+        font-size: 13px;
+        padding: 4px;
+        color: red;
+        background-color: wheat;
+        border: 2px solid #fff;
+        border-radius: 100px;
+    }
+
+    .liked_msg_right{
+        position: relative;
+        float: right;
+        bottom: 15px;
+        right: 20px;
+        clear: both; 
+    }
+
+    .liked_msg_right i {
+        font-size: 13px;
+        padding: 4px;
+        color: red;
+        background-color: wheat;
+        border: 2px solid #fff;
+        border-radius: 100px;
     }
 
     /* ##### Right ##### */
@@ -1280,6 +1455,41 @@
         border-bottom-width: 0;
     }
 
+    /* ######## liked_msg ########### */
+
+    .liked_msg_left{
+        position: relative;
+        left: 65px;
+        bottom: 15px;
+        clear: both; 
+    }
+
+    .liked_msg_left i {
+        font-size: 13px;
+        padding: 4px;
+        color: red;
+        background-color: wheat;
+        border: 2px solid #fff;
+        border-radius: 100px;
+    }
+
+    .liked_msg_right{
+        position: relative;
+        float: right;
+        bottom: 15px;
+        right: 20px;
+        clear: both; 
+    }
+
+    .liked_msg_right i {
+        font-size: 13px;
+        padding: 4px;
+        color: red;
+        background-color: wheat;
+        border: 2px solid #fff;
+        border-radius: 100px;
+    }
+
     /* ##### Right ##### */
     .normal{
         float: right;
@@ -1506,6 +1716,41 @@
         bottom: 0;
         border: 18px solid transparent;
         border-bottom-width: 0;
+    }
+
+     /* ######## liked_msg ########### */
+
+     .liked_msg_left{
+        position: relative;
+        left: 65px;
+        bottom: 15px;
+        clear: both; 
+    }
+
+    .liked_msg_left i {
+        font-size: 13px;
+        padding: 4px;
+        color: red;
+        background-color: wheat;
+        border: 2px solid #fff;
+        border-radius: 100px;
+    }
+
+    .liked_msg_right{
+        position: relative;
+        float: right;
+        bottom: 15px;
+        right: 20px;
+        clear: both; 
+    }
+
+    .liked_msg_right i {
+        font-size: 13px;
+        padding: 4px;
+        color: red;
+        background-color: wheat;
+        border: 2px solid #fff;
+        border-radius: 100px;
     }
 
     /* ##### Right ##### */
