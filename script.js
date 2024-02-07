@@ -287,7 +287,7 @@ const showChats = () => {
                                                     </div>
                                                 </div>`
                     }else{
-                        messages.innerHTML += `<div class="common left_message_first left mb-1 ${extraCss}">
+                        messages.innerHTML += `<div class="common left_message_first left ${extraCss}">
                                             
                                                     <div class="text" onmouseover="showDeleteBtn(${index})" onmouseout="hideDeleteBtn(${index})" ondblclick="likeMessages(${index})" onclick="removeLike(${index})">
                                                         ${textWithLinkCheck}
@@ -316,7 +316,7 @@ const showChats = () => {
                                                 </div>
                                                 `
                     }else{
-                        messages.innerHTML += `<div class="answer left mb-1 ${extraCss}">
+                        messages.innerHTML += `<div class="answer left ${extraCss}">
                                                     <div class="avatar">
                                                         <img src="lakshman.jpg" alt="User name">
                                                     </div>
@@ -344,7 +344,7 @@ const showChats = () => {
                                                     </div>
                                                 </div>`
                     }else{
-                        messages.innerHTML += `<div class="common left_message_mid left mb-1 ${extraCss}">
+                        messages.innerHTML += `<div class="common left_message_mid left ${extraCss}">
                                             
                                                     <div class="text" onmouseover="showDeleteBtn(${index})" onmouseout="hideDeleteBtn(${index})" ondblclick="likeMessages(${index})" onclick="removeLike(${index})">
                                                         ${textWithLinkCheck}
@@ -375,7 +375,7 @@ const showChats = () => {
                                                     </div>
                                                 </div>`
                     }else{
-                        messages.innerHTML += `<div class="common right_message_first right normal mb-1 ${extraCss}">
+                        messages.innerHTML += `<div class="common right_message_first right normal ${extraCss}">
                                                     <div class="text" onmouseover="showDeleteBtn(${index})" onmouseout="hideDeleteBtn(${index})" ondblclick="likeMessages(${index})" onclick="removeLike(${index})">
                                                         ${textWithLinkCheck}
                                                         <span class="delete_msg msg_m" onclick="deleteTask(${index})">
@@ -399,7 +399,7 @@ const showChats = () => {
                                                 </div>
                                             </div>`
                     }else {
-                        messages.innerHTML += `<div class="answer right normal mb-1 ${extraCss}">
+                        messages.innerHTML += `<div class="answer right normal ${extraCss}">
                                                     <div class="text" onmouseover="showDeleteBtn(${index})" onmouseout="hideDeleteBtn(${index})" ondblclick="likeMessages(${index})" onclick="removeLike(${index})">
                                                         ${textWithLinkCheck}
                                                         <span class="delete_msg msg_m" onclick="deleteTask(${index})">
@@ -423,7 +423,7 @@ const showChats = () => {
                                                     </div>
                                                 </div>`
                     }else{
-                        messages.innerHTML += `<div class="common right_message_mid normal mb-1 ${extraCss}">
+                        messages.innerHTML += `<div class="common right_message_mid normal ${extraCss}">
                                                     <div class="text" onmouseover="showDeleteBtn(${index})" onmouseout="hideDeleteBtn(${index})" ondblclick="likeMessages(${index})" onclick="removeLike(${index})">
                                                         ${textWithLinkCheck}
                                                         <span class="delete_msg msg_m" onclick="deleteTask(${index})">
