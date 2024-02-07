@@ -442,8 +442,8 @@ const showChats = () => {
             if (obj.userId == 3) {
                 const before = timeBeforeSpace(obj.dateTime);
                 const after = timeAfterSpace(obj.dateTime);
-                messages.innerHTML += `<div class="border border-primary date_times">
-                                            <div class="border border-secondary my-2" onclick="showDeleteBtn(${index})" ondblclick="hideDeleteBtn(${index})">
+                messages.innerHTML += `<div class="date_times">
+                                            <div class="my-2" onclick="showDeleteBtn(${index})" ondblclick="hideDeleteBtn(${index})">
                                                 ${before} ${after}
                                             </div>
                                             <span class="delete_msg center_" onclick="deleteTask(${index})">
