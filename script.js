@@ -287,7 +287,7 @@ const showChats = () => {
                                                     </div>
                                                 </div>`
                     }else{
-                        messages.innerHTML += `<div class="common left_message_first left ${extraCss}">
+                        messages.innerHTML += `<div class="common mb-1 left_message_first left ${extraCss}">
                                             
                                                     <div class="text" onmouseover="showDeleteBtn(${index})" onmouseout="hideDeleteBtn(${index})" ondblclick="likeMessages(${index})" onclick="removeLike(${index})">
                                                         ${textWithLinkCheck}
