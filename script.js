@@ -104,7 +104,7 @@ users_records.addEventListener('click', (e) => {
     if (e.target.classList.contains("delete_btn")) {
         e.target.closest("tr").remove(row--);
     } else {
-        // console.log(e.target);
+        console.log(e.target);
     }
 });
 
@@ -234,6 +234,8 @@ let saveChats = (userDatas) => {
         }
     });
 
+    userDatas = [];
+    
     showChats();
 };
 
@@ -268,10 +270,11 @@ const showChats = () => {
 
     taskObj.forEach((obj, index) => {
         if (obj.userId != null) {
+
             if (obj.userId == 1) {
                 let textWithLinkCheck = checkLinks(obj.userId, obj.message);
                 let extraCss = obj.extraCss ? obj.extraCss : "";
-                
+        
                 if(extraCss == 'firstMsgUser1'){
                     if(obj.liked == false){
                         messages.innerHTML += `<div class="common left_message_first left my-1 ${extraCss}">
@@ -360,7 +363,6 @@ const showChats = () => {
             if (obj.userId == 2) {
                 let textWithLinkCheck = checkLinks(obj.userId, obj.message);
                 let extraCss = obj.extraCss ? obj.extraCss : "";
-                console.log(extraCss);
 
                 if(extraCss == 'firstMsgUser2'){
                     if(obj.liked == false){
