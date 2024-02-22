@@ -73,7 +73,7 @@
     }
 
     .chat-body .answer.left {
-        padding: 0 0 0 58px;
+        padding: 0 0 0 38px;
         text-align: left;
         float: left;
     }
@@ -109,6 +109,18 @@
     .chat-body .answer.left .text {
         background: #ebebeb;
         border-radius: 0px 8px 8px 0;
+        --r: 0px; /* the radius */
+        --t: 20px; /* the size of the tail */
+        -webkit-mask: 
+            radial-gradient(var(--t) at var(--_d) 0,#0000 98%,#000 102%) 
+            var(--_d) 100%/calc(100% - var(--r)) var(--t) no-repeat,
+            conic-gradient(at var(--r) var(--r),#000 75%,#0000 0) 
+            calc(var(--r)/-2) calc(var(--r)/-2) padding-box, 
+            radial-gradient(50% 50%,#000 98%,#0000 101%) 
+            0 0/var(--r) var(--r) space padding-box;
+        --_d: 0%;
+        border-left: var(--t) solid #0000;
+        place-self: start;
     }
 
     .chat-body .answer .text {
@@ -116,8 +128,7 @@
         position: relative;
     }
 
-
-    .chat-body .answer.left .text:before {
+    /*.chat-body .answer.left .text:before {
         left: -29px;
         border-right-color: #ebebeb;
         border-right-width: 12px;
@@ -130,7 +141,7 @@
         bottom: 0;
         border: 18px solid transparent;
         border-bottom-width: 0;
-    }
+    }*/
 
     /* ######## liked_msg ########### */
 
@@ -175,20 +186,33 @@
     }
 
     .chat-body .answer.right {
-        padding: 0 15px 0 0;
+        padding: 0 0.07rem 0 0;
     }
 
     .chat-body .answer.right .text {
         background: #682960;
         color: #ffffff;
         border-radius: 8px 0px 0 8px;
+        --r: 0px; /* the radius */
+        --t: 20px; /* the size of the tail */
+        -webkit-mask: 
+            radial-gradient(var(--t) at var(--_d) 0,#0000 98%,#000 102%) 
+            var(--_d) 100%/calc(100% - var(--r)) var(--t) no-repeat,
+            conic-gradient(at var(--r) var(--r),#000 75%,#0000 0) 
+            calc(var(--r)/-2) calc(var(--r)/-2) padding-box, 
+            radial-gradient(50% 50%,#000 98%,#0000 101%) 
+            0 0/var(--r) var(--r) space padding-box;
+        --_d: 100%;
+        border-right: var(--t) solid #0000;
+        place-self: end;
+        margin-right: -2px;
     }
 
-    .chat-body .answer.right .text:before {
+    /*.chat-body .answer.right .text:before {
         right: -29px;
         border-left-color: #682960;
         border-left-width: 12px;
-    }
+    }*/
 
     /*Delete Msg Field*/
     .delete_msg {
@@ -316,6 +340,7 @@
         border-radius: 8px 8px 0 8px;
         padding: 8px;
         position: relative;
+        margin-right: 4px;
     }
 
     /**************** First End ********************/
@@ -355,6 +380,7 @@
         clear: both;
         word-wrap: break-word;
         max-width: 70%;
+        margin-right: 4px;
     }
 
     .right_message_mid {
@@ -370,11 +396,11 @@
         position: relative;
     }
 
-    .right_message_mid .text:before {
+    /*.right_message_mid .text:before {
         right: -29px;
         border-left-color: #682960;
         border-left-width: 12px;
-    }
+    }*/
 
     /****************End Mid********************/
 
@@ -454,7 +480,7 @@
     }
 
     .chat-body .answer.left {
-        padding: 0 0 0 58px;
+        padding: 0 0 0 38px;
         text-align: left;
         float: left;
     }
@@ -490,6 +516,18 @@
     .chat-body .answer.left .text {
         background: #ebebeb;
         border-radius: 0px 8px 8px 0;
+        --r: 0px; /* the radius */
+        --t: 20px; /* the size of the tail */
+        -webkit-mask: 
+            radial-gradient(var(--t) at var(--_d) 0,#0000 98%,#000 102%) 
+            var(--_d) 100%/calc(100% - var(--r)) var(--t) no-repeat,
+            conic-gradient(at var(--r) var(--r),#000 75%,#0000 0) 
+            calc(var(--r)/-2) calc(var(--r)/-2) padding-box, 
+            radial-gradient(50% 50%,#000 98%,#0000 101%) 
+            0 0/var(--r) var(--r) space padding-box;
+        --_d: 0%;
+        border-left: var(--t) solid #0000;
+        place-self: start;
     }
 
     .chat-body .answer .text {
@@ -497,7 +535,7 @@
         position: relative;
     }
 
-    .chat-body .answer.left .text:before {
+    /*.chat-body .answer.left .text:before {
         left: -29px;
         border-right-color: #ebebeb;
         border-right-width: 12px;
@@ -510,7 +548,7 @@
         bottom: 0;
         border: 18px solid transparent;
         border-bottom-width: 0;
-    }
+    }*/
 
     /* ######## liked_msg ########### */
 
@@ -555,20 +593,33 @@
     }
 
     .chat-body .answer.right {
-        padding: 0 15px 0 0;
+        padding: 0 0.07rem 0 0;
     }
 
     .chat-body .answer.right .text {
         background: #682960;
         color: #ffffff;
         border-radius: 8px 0px 0 8px;
+        --r: 0px; /* the radius */
+        --t: 20px; /* the size of the tail */
+        -webkit-mask: 
+            radial-gradient(var(--t) at var(--_d) 0,#0000 98%,#000 102%) 
+            var(--_d) 100%/calc(100% - var(--r)) var(--t) no-repeat,
+            conic-gradient(at var(--r) var(--r),#000 75%,#0000 0) 
+            calc(var(--r)/-2) calc(var(--r)/-2) padding-box, 
+            radial-gradient(50% 50%,#000 98%,#0000 101%) 
+            0 0/var(--r) var(--r) space padding-box;
+        --_d: 100%;
+        border-right: var(--t) solid #0000;
+        place-self: end;
+        margin-right: -2px;
     }
 
-    .chat-body .answer.right .text:before {
+    /*.chat-body .answer.right .text:before {
         right: -29px;
         border-left-color: #682960;
         border-left-width: 12px;
-    }
+    }*/
 
     /*Delete Msg Field*/
     .delete_msg {
@@ -696,6 +747,7 @@
         border-radius: 8px 8px 0 8px;
         padding: 8px;
         position: relative;
+        margin-right: 4px;
     }
 
     /**************** First End ********************/
@@ -735,6 +787,7 @@
         clear: both;
         word-wrap: break-word;
         max-width: 70%;
+        margin-right: 4px;
     }
 
     .right_message_mid {
@@ -750,11 +803,11 @@
         position: relative;
     }
 
-    .right_message_mid .text:before {
+    /*.right_message_mid .text:before {
         right: -29px;
         border-left-color: #682960;
         border-left-width: 12px;
-    }
+    }*/
 
     /****************End Mid********************/
 
@@ -834,7 +887,7 @@
     }
 
     .chat-body .answer.left {
-        padding: 0 0 0 58px;
+        padding: 0 0 0 38px;
         text-align: left;
         float: left;
     }
@@ -870,6 +923,18 @@
     .chat-body .answer.left .text {
         background: #ebebeb;
         border-radius: 0px 8px 8px 0;
+        --r: 0px; /* the radius */
+        --t: 20px; /* the size of the tail */
+        -webkit-mask: 
+            radial-gradient(var(--t) at var(--_d) 0,#0000 98%,#000 102%) 
+            var(--_d) 100%/calc(100% - var(--r)) var(--t) no-repeat,
+            conic-gradient(at var(--r) var(--r),#000 75%,#0000 0) 
+            calc(var(--r)/-2) calc(var(--r)/-2) padding-box, 
+            radial-gradient(50% 50%,#000 98%,#0000 101%) 
+            0 0/var(--r) var(--r) space padding-box;
+        --_d: 0%;
+        border-left: var(--t) solid #0000;
+        place-self: start;
     }
 
     .chat-body .answer .text {
@@ -877,7 +942,7 @@
         position: relative;
     }
 
-    .chat-body .answer.left .text:before {
+    /*.chat-body .answer.left .text:before {
         left: -29px;
         border-right-color: #ebebeb;
         border-right-width: 12px;
@@ -890,7 +955,7 @@
         bottom: 0;
         border: 18px solid transparent;
         border-bottom-width: 0;
-    }
+    }*/
 
     /* ######## liked_msg ########### */
 
@@ -935,20 +1000,33 @@
     }
 
     .chat-body .answer.right {
-        padding: 0 15px 0 0;
+        padding: 0 0.07rem 0 0;
     }
 
     .chat-body .answer.right .text {
         background: #682960;
         color: #ffffff;
         border-radius: 8px 0px 0 8px;
+        --r: 0px; /* the radius */
+        --t: 20px; /* the size of the tail */
+        -webkit-mask: 
+            radial-gradient(var(--t) at var(--_d) 0,#0000 98%,#000 102%) 
+            var(--_d) 100%/calc(100% - var(--r)) var(--t) no-repeat,
+            conic-gradient(at var(--r) var(--r),#000 75%,#0000 0) 
+            calc(var(--r)/-2) calc(var(--r)/-2) padding-box, 
+            radial-gradient(50% 50%,#000 98%,#0000 101%) 
+            0 0/var(--r) var(--r) space padding-box;
+        --_d: 100%;
+        border-right: var(--t) solid #0000;
+        place-self: end;
+        margin-right: -2px;
     }
 
-    .chat-body .answer.right .text:before {
+    /*.chat-body .answer.right .text:before {
         right: -29px;
         border-left-color: #682960;
         border-left-width: 12px;
-    }
+    }*/
 
     /*Delete Msg Field*/
     .delete_msg {
@@ -1076,6 +1154,7 @@
         border-radius: 8px 8px 0 8px;
         padding: 8px;
         position: relative;
+        margin-right: 4px;
     }
 
     /**************** First End ********************/
@@ -1115,6 +1194,7 @@
         clear: both;
         word-wrap: break-word;
         max-width: 70%;
+        margin-right: 4px;
     }
 
     .right_message_mid {
@@ -1130,11 +1210,11 @@
         position: relative;
     }
 
-    .right_message_mid .text:before {
+    /*.right_message_mid .text:before {
         right: -29px;
         border-left-color: #682960;
         border-left-width: 12px;
-    }
+    }*/
 
     /****************End Mid********************/
 
@@ -1216,7 +1296,7 @@
     }
 
     .chat-body .answer.left {
-        padding: 0 0 0 58px;
+        padding: 0 0 0 38px;
         text-align: left;
         float: left;
     }
@@ -1252,6 +1332,18 @@
     .chat-body .answer.left .text {
         background: #ebebeb;
         border-radius: 0px 8px 8px 0;
+        --r: 0px; /* the radius */
+        --t: 20px; /* the size of the tail */
+        -webkit-mask: 
+            radial-gradient(var(--t) at var(--_d) 0,#0000 98%,#000 102%) 
+            var(--_d) 100%/calc(100% - var(--r)) var(--t) no-repeat,
+            conic-gradient(at var(--r) var(--r),#000 75%,#0000 0) 
+            calc(var(--r)/-2) calc(var(--r)/-2) padding-box, 
+            radial-gradient(50% 50%,#000 98%,#0000 101%) 
+            0 0/var(--r) var(--r) space padding-box;
+        --_d: 0%;
+        border-left: var(--t) solid #0000;
+        place-self: start;
     }
 
     .chat-body .answer .text {
@@ -1259,7 +1351,7 @@
         position: relative;
     }
 
-    .chat-body .answer.left .text:before {
+    /*.chat-body .answer.left .text:before {
         left: -29px;
         border-right-color: #ebebeb;
         border-right-width: 12px;
@@ -1272,7 +1364,7 @@
         bottom: 0;
         border: 18px solid transparent;
         border-bottom-width: 0;
-    }
+    }*/
 
     /* ######## liked_msg ########### */
 
@@ -1317,20 +1409,33 @@
     }
 
     .chat-body .answer.right {
-        padding: 0 15px 0 0;
+        padding: 0 0.07rem 0 0;
     }
 
     .chat-body .answer.right .text {
         background: #682960;
         color: #ffffff;
         border-radius: 8px 0px 0 8px;
+        --r: 0px; /* the radius */
+        --t: 20px; /* the size of the tail */
+        -webkit-mask: 
+            radial-gradient(var(--t) at var(--_d) 0,#0000 98%,#000 102%) 
+            var(--_d) 100%/calc(100% - var(--r)) var(--t) no-repeat,
+            conic-gradient(at var(--r) var(--r),#000 75%,#0000 0) 
+            calc(var(--r)/-2) calc(var(--r)/-2) padding-box, 
+            radial-gradient(50% 50%,#000 98%,#0000 101%) 
+            0 0/var(--r) var(--r) space padding-box;
+        --_d: 100%;
+        border-right: var(--t) solid #0000;
+        place-self: end;
+        margin-right: -2px;
     }
 
-    .chat-body .answer.right .text:before {
+    /*.chat-body .answer.right .text:before {
         right: -29px;
         border-left-color: #682960;
         border-left-width: 12px;
-    }
+    }*/
 
     /*Delete Msg Field*/
     .delete_msg {
@@ -1458,6 +1563,7 @@
         border-radius: 8px 8px 0 8px;
         padding: 8px;
         position: relative;
+        margin-right: 4px;
     }
 
     /**************** First End ********************/
@@ -1497,6 +1603,7 @@
         clear: both;
         word-wrap: break-word;
         max-width: 70%;
+        margin-right: 4px;
     }
 
     .right_message_mid {
@@ -1512,11 +1619,11 @@
         position: relative;
     }
 
-    .right_message_mid .text:before {
+    /*.right_message_mid .text:before {
         right: -29px;
         border-left-color: #682960;
         border-left-width: 12px;
-    }
+    }*/
 
     /****************End Mid********************/
 
@@ -1597,7 +1704,7 @@
     }
 
     .chat-body .answer.left {
-        padding: 0 0 0 58px;
+        padding: 0 0 0 38px;
         text-align: left;
         float: left;
     }
@@ -1633,6 +1740,18 @@
     .chat-body .answer.left .text {
         background: #ebebeb;
         border-radius: 0px 8px 8px 0;
+        --r: 0px; /* the radius */
+        --t: 20px; /* the size of the tail */
+        -webkit-mask: 
+            radial-gradient(var(--t) at var(--_d) 0,#0000 98%,#000 102%) 
+            var(--_d) 100%/calc(100% - var(--r)) var(--t) no-repeat,
+            conic-gradient(at var(--r) var(--r),#000 75%,#0000 0) 
+            calc(var(--r)/-2) calc(var(--r)/-2) padding-box, 
+            radial-gradient(50% 50%,#000 98%,#0000 101%) 
+            0 0/var(--r) var(--r) space padding-box;
+        --_d: 0%;
+        border-left: var(--t) solid #0000;
+        place-self: start;
     }
 
     .chat-body .answer .text {
@@ -1640,7 +1759,7 @@
         position: relative;
     }
 
-    .chat-body .answer.left .text:before {
+    /*.chat-body .answer.left .text:before {
         left: -29px;
         border-right-color: #ebebeb;
         border-right-width: 12px;
@@ -1653,7 +1772,7 @@
         bottom: 0;
         border: 18px solid transparent;
         border-bottom-width: 0;
-    }
+    }*/
 
     /* ######## liked_msg ########### */
 
@@ -1698,20 +1817,33 @@
     }
 
     .chat-body .answer.right {
-        padding: 0 15px 0 0;
+        padding: 0 0.07rem 0 0;
     }
 
     .chat-body .answer.right .text {
         background: #682960;
         color: #ffffff;
         border-radius: 8px 0px 0 8px;
+        --r: 0px; /* the radius */
+        --t: 20px; /* the size of the tail */
+        -webkit-mask: 
+            radial-gradient(var(--t) at var(--_d) 0,#0000 98%,#000 102%) 
+            var(--_d) 100%/calc(100% - var(--r)) var(--t) no-repeat,
+            conic-gradient(at var(--r) var(--r),#000 75%,#0000 0) 
+            calc(var(--r)/-2) calc(var(--r)/-2) padding-box, 
+            radial-gradient(50% 50%,#000 98%,#0000 101%) 
+            0 0/var(--r) var(--r) space padding-box;
+        --_d: 100%;
+        border-right: var(--t) solid #0000;
+        place-self: end;
+        margin-right: -2px;
     }
 
-    .chat-body .answer.right .text:before {
+    /*.chat-body .answer.right .text:before {
         right: -29px;
         border-left-color: #682960;
         border-left-width: 12px;
-    }
+    }*/
 
     /*Delete Msg Field*/
     .delete_msg {
@@ -1839,6 +1971,7 @@
         border-radius: 8px 8px 0 8px;
         padding: 8px;
         position: relative;
+        margin-right: 4px;
     }
 
     /**************** First End ********************/
@@ -1878,6 +2011,7 @@
         clear: both;
         word-wrap: break-word;
         max-width: 70%;
+        margin-right: 4px;
     }
 
     .right_message_mid {
@@ -1893,11 +2027,11 @@
         position: relative;
     }
 
-    .right_message_mid .text:before {
+    /*.right_message_mid .text:before {
         right: -29px;
         border-left-color: #682960;
         border-left-width: 12px;
-    }
+    }*/
 
     /****************End Mid********************/
 
@@ -1976,8 +2110,13 @@
         width: 100%;
     }
 
+    /*
+    #messages{
+        min-height: 420px;
+    }*/
+
     .chat-body .answer.left {
-        padding: 0 0 0 58px;
+        padding: 0 0 0 38px;
         text-align: left;
         float: left;
     }
@@ -2012,6 +2151,18 @@
     .chat-body .answer.left .text {
         background: #ebebeb;
         border-radius: 0px 8px 8px 0;
+        --r: 0px; /* the radius */
+        --t: 20px; /* the size of the tail */
+        -webkit-mask: 
+            radial-gradient(var(--t) at var(--_d) 0,#0000 98%,#000 102%) 
+            var(--_d) 100%/calc(100% - var(--r)) var(--t) no-repeat,
+            conic-gradient(at var(--r) var(--r),#000 75%,#0000 0) 
+            calc(var(--r)/-2) calc(var(--r)/-2) padding-box, 
+            radial-gradient(50% 50%,#000 98%,#0000 101%) 
+            0 0/var(--r) var(--r) space padding-box;
+        --_d: 0%;
+        border-left: var(--t) solid #0000;
+        place-self: start;
     }
 
     .chat-body .answer .text {
@@ -2019,7 +2170,7 @@
         position: relative;
     }
 
-    .chat-body .answer.left .text:before {
+    /*.chat-body .answer.left .text:before {
         left: -29px;
         border-right-color: #ebebeb;
         border-right-width: 12px;
@@ -2032,7 +2183,7 @@
         bottom: 0;
         border: 18px solid transparent;
         border-bottom-width: 0;
-    }
+    }*/
 
     /* ######## liked_msg ########### */
 
@@ -2077,20 +2228,33 @@
     }
 
     .chat-body .answer.right {
-        padding: 0 15px 0 0;
+        padding: 0 0.07rem 0 0;
     }
 
     .chat-body .answer.right .text {
         background: #682960;
         color: #ffffff;
         border-radius: 8px 0px 0 8px;
+        --r: 0px; /* the radius */
+        --t: 20px; /* the size of the tail */
+        -webkit-mask: 
+            radial-gradient(var(--t) at var(--_d) 0,#0000 98%,#000 102%) 
+            var(--_d) 100%/calc(100% - var(--r)) var(--t) no-repeat,
+            conic-gradient(at var(--r) var(--r),#000 75%,#0000 0) 
+            calc(var(--r)/-2) calc(var(--r)/-2) padding-box, 
+            radial-gradient(50% 50%,#000 98%,#0000 101%) 
+            0 0/var(--r) var(--r) space padding-box;
+        --_d: 100%;
+        border-right: var(--t) solid #0000;
+        place-self: end;
+        margin-right: -2px;
     }
 
-    .chat-body .answer.right .text:before {
+    /*.chat-body .answer.right .text:before {
         right: -29px;
         border-left-color: #682960;
         border-left-width: 12px;
-    }
+    }*/
 
     .chat-body .answer {
         position: relative;
@@ -2226,6 +2390,7 @@
         border-radius: 8px 8px 0 8px;
         padding: 8px;
         position: relative;
+        margin-right: 4px;
     }
 
     /**************** First End ********************/
@@ -2265,6 +2430,7 @@
         clear: both;
         word-wrap: break-word;
         max-width: 70%;
+        margin-right: 4px;
     }
 
     .right_message_mid {
@@ -2280,11 +2446,11 @@
         position: relative;
     }
 
-    .right_message_mid .text:before {
+    /*.right_message_mid .text:before {
         right: -29px;
         border-left-color: #682960;
         border-left-width: 12px;
-    }
+    }*/
 
     /****************End Mid********************/
 
@@ -2364,7 +2530,7 @@
     }
 
     .chat-body .answer.left {
-        padding: 0 0 0 58px;
+        padding: 0 0 0 38px;
         text-align: left;
         float: left;
     }
@@ -2399,6 +2565,18 @@
     .chat-body .answer.left .text {
         background: #ebebeb;
         border-radius: 0px 8px 8px 0;
+        --r: 0px; /* the radius */
+        --t: 20px; /* the size of the tail */
+        -webkit-mask: 
+            radial-gradient(var(--t) at var(--_d) 0,#0000 98%,#000 102%) 
+            var(--_d) 100%/calc(100% - var(--r)) var(--t) no-repeat,
+            conic-gradient(at var(--r) var(--r),#000 75%,#0000 0) 
+            calc(var(--r)/-2) calc(var(--r)/-2) padding-box, 
+            radial-gradient(50% 50%,#000 98%,#0000 101%) 
+            0 0/var(--r) var(--r) space padding-box;
+        --_d: 0%;
+        border-left: var(--t) solid #0000;
+        place-self: start;
     }
 
     .chat-body .answer .text {
@@ -2406,7 +2584,7 @@
         position: relative;
     }
 
-    .chat-body .answer.left .text:before {
+    /*.chat-body .answer.left .text:before {
         left: -29px;
         border-right-color: #ebebeb;
         border-right-width: 12px;
@@ -2419,7 +2597,7 @@
         bottom: 0;
         border: 18px solid transparent;
         border-bottom-width: 0;
-    }
+    }*/
 
     /* ######## liked_msg ########### */
 
@@ -2464,20 +2642,33 @@
     }
 
     .chat-body .answer.right {
-        padding: 0 15px 0 0;
+        padding: 0 0.07rem 0 0;
     }
 
     .chat-body .answer.right .text {
         background: #682960;
         color: #ffffff;
         border-radius: 8px 0px 0 8px;
+        --r: 0px; /* the radius */
+        --t: 20px; /* the size of the tail */
+        -webkit-mask: 
+            radial-gradient(var(--t) at var(--_d) 0,#0000 98%,#000 102%) 
+            var(--_d) 100%/calc(100% - var(--r)) var(--t) no-repeat,
+            conic-gradient(at var(--r) var(--r),#000 75%,#0000 0) 
+            calc(var(--r)/-2) calc(var(--r)/-2) padding-box, 
+            radial-gradient(50% 50%,#000 98%,#0000 101%) 
+            0 0/var(--r) var(--r) space padding-box;
+        --_d: 100%;
+        border-right: var(--t) solid #0000;
+        place-self: end;
+        margin-right: -2px;
     }
 
-    .chat-body .answer.right .text:before {
+    /*.chat-body .answer.right .text:before {
         right: -29px;
         border-left-color: #682960;
         border-left-width: 12px;
-    }
+    }*/
 
     /*Delete Msg Field*/
     .delete_msg {
@@ -2605,6 +2796,7 @@
         border-radius: 8px 8px 0 8px;
         padding: 8px;
         position: relative;
+        margin-right: 4px;
     }
 
     /**************** First End ********************/
@@ -2644,6 +2836,7 @@
         clear: both;
         word-wrap: break-word;
         max-width: 70%;
+        margin-right: 4px;
     }
 
     .right_message_mid {
@@ -2659,11 +2852,11 @@
         position: relative;
     }
 
-    .right_message_mid .text:before {
+    /*.right_message_mid .text:before {
         right: -29px;
         border-left-color: #682960;
         border-left-width: 12px;
-    }
+    }*/
 
     /****************End Mid********************/
 
