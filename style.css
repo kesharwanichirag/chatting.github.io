@@ -1,6 +1,4 @@
-/* ##### Media Queries ##### */
-
-
+/* ******* ##### Media Queries ##### ******* */
 @media (max-width: 576px) {
     body {
         background: #fff;
@@ -128,21 +126,6 @@
         position: relative;
     }
 
-    /*.chat-body .answer.left .text:before {
-        left: -29px;
-        border-right-color: #ebebeb;
-        border-right-width: 12px;
-    }
-
-    .chat-body .answer .text:before {
-        content: '';
-        display: block;
-        position: absolute;
-        bottom: 0;
-        border: 18px solid transparent;
-        border-bottom-width: 0;
-    }*/
-
     /* ######## liked_msg ########### */
 
     .liked_msg_left {
@@ -207,12 +190,6 @@
         place-self: end;
         margin-right: -2px;
     }
-
-    /*.chat-body .answer.right .text:before {
-        right: -29px;
-        border-left-color: #682960;
-        border-left-width: 12px;
-    }*/
 
     /*Delete Msg Field*/
     .delete_msg {
@@ -395,12 +372,6 @@
         padding: 8px;
         position: relative;
     }
-
-    /*.right_message_mid .text:before {
-        right: -29px;
-        border-left-color: #682960;
-        border-left-width: 12px;
-    }*/
 
     /****************End Mid********************/
 
@@ -535,21 +506,6 @@
         position: relative;
     }
 
-    /*.chat-body .answer.left .text:before {
-        left: -29px;
-        border-right-color: #ebebeb;
-        border-right-width: 12px;
-    }
-
-    .chat-body .answer .text:before {
-        content: '';
-        display: block;
-        position: absolute;
-        bottom: 0;
-        border: 18px solid transparent;
-        border-bottom-width: 0;
-    }*/
-
     /* ######## liked_msg ########### */
 
     .liked_msg_left {
@@ -614,12 +570,6 @@
         place-self: end;
         margin-right: -2px;
     }
-
-    /*.chat-body .answer.right .text:before {
-        right: -29px;
-        border-left-color: #682960;
-        border-left-width: 12px;
-    }*/
 
     /*Delete Msg Field*/
     .delete_msg {
@@ -802,12 +752,6 @@
         padding: 8px;
         position: relative;
     }
-
-    /*.right_message_mid .text:before {
-        right: -29px;
-        border-left-color: #682960;
-        border-left-width: 12px;
-    }*/
 
     /****************End Mid********************/
 
@@ -942,21 +886,6 @@
         position: relative;
     }
 
-    /*.chat-body .answer.left .text:before {
-        left: -29px;
-        border-right-color: #ebebeb;
-        border-right-width: 12px;
-    }
-
-    .chat-body .answer .text:before {
-        content: '';
-        display: block;
-        position: absolute;
-        bottom: 0;
-        border: 18px solid transparent;
-        border-bottom-width: 0;
-    }*/
-
     /* ######## liked_msg ########### */
 
     .liked_msg_left {
@@ -1021,12 +950,6 @@
         place-self: end;
         margin-right: -2px;
     }
-
-    /*.chat-body .answer.right .text:before {
-        right: -29px;
-        border-left-color: #682960;
-        border-left-width: 12px;
-    }*/
 
     /*Delete Msg Field*/
     .delete_msg {
@@ -1209,12 +1132,6 @@
         padding: 8px;
         position: relative;
     }
-
-    /*.right_message_mid .text:before {
-        right: -29px;
-        border-left-color: #682960;
-        border-left-width: 12px;
-    }*/
 
     /****************End Mid********************/
 
@@ -1351,21 +1268,6 @@
         position: relative;
     }
 
-    /*.chat-body .answer.left .text:before {
-        left: -29px;
-        border-right-color: #ebebeb;
-        border-right-width: 12px;
-    }
-
-    .chat-body .answer .text:before {
-        content: '';
-        display: block;
-        position: absolute;
-        bottom: 0;
-        border: 18px solid transparent;
-        border-bottom-width: 0;
-    }*/
-
     /* ######## liked_msg ########### */
 
     .liked_msg_left {
@@ -1430,12 +1332,6 @@
         place-self: end;
         margin-right: -2px;
     }
-
-    /*.chat-body .answer.right .text:before {
-        right: -29px;
-        border-left-color: #682960;
-        border-left-width: 12px;
-    }*/
 
     /*Delete Msg Field*/
     .delete_msg {
@@ -1618,12 +1514,6 @@
         padding: 8px;
         position: relative;
     }
-
-    /*.right_message_mid .text:before {
-        right: -29px;
-        border-left-color: #682960;
-        border-left-width: 12px;
-    }*/
 
     /****************End Mid********************/
 
@@ -1759,21 +1649,6 @@
         position: relative;
     }
 
-    /*.chat-body .answer.left .text:before {
-        left: -29px;
-        border-right-color: #ebebeb;
-        border-right-width: 12px;
-    }
-
-    .chat-body .answer .text:before {
-        content: '';
-        display: block;
-        position: absolute;
-        bottom: 0;
-        border: 18px solid transparent;
-        border-bottom-width: 0;
-    }*/
-
     /* ######## liked_msg ########### */
 
     .liked_msg_left {
@@ -1838,12 +1713,6 @@
         place-self: end;
         margin-right: -2px;
     }
-
-    /*.chat-body .answer.right .text:before {
-        right: -29px;
-        border-left-color: #682960;
-        border-left-width: 12px;
-    }*/
 
     /*Delete Msg Field*/
     .delete_msg {
@@ -2026,12 +1895,6 @@
         padding: 8px;
         position: relative;
     }
-
-    /*.right_message_mid .text:before {
-        right: -29px;
-        border-left-color: #682960;
-        border-left-width: 12px;
-    }*/
 
     /****************End Mid********************/
 
@@ -2170,21 +2033,6 @@
         position: relative;
     }
 
-    /*.chat-body .answer.left .text:before {
-        left: -29px;
-        border-right-color: #ebebeb;
-        border-right-width: 12px;
-    }
-
-    .chat-body .answer .text:before {
-        content: '';
-        display: block;
-        position: absolute;
-        bottom: 0;
-        border: 18px solid transparent;
-        border-bottom-width: 0;
-    }*/
-
     /* ######## liked_msg ########### */
 
     .liked_msg_left {
@@ -2249,12 +2097,6 @@
         place-self: end;
         margin-right: -2px;
     }
-
-    /*.chat-body .answer.right .text:before {
-        right: -29px;
-        border-left-color: #682960;
-        border-left-width: 12px;
-    }*/
 
     .chat-body .answer {
         position: relative;
@@ -2446,12 +2288,6 @@
         position: relative;
     }
 
-    /*.right_message_mid .text:before {
-        right: -29px;
-        border-left-color: #682960;
-        border-left-width: 12px;
-    }*/
-
     /****************End Mid********************/
 
     /* ##################################################################### */
@@ -2584,21 +2420,6 @@
         position: relative;
     }
 
-    /*.chat-body .answer.left .text:before {
-        left: -29px;
-        border-right-color: #ebebeb;
-        border-right-width: 12px;
-    }
-
-    .chat-body .answer .text:before {
-        content: '';
-        display: block;
-        position: absolute;
-        bottom: 0;
-        border: 18px solid transparent;
-        border-bottom-width: 0;
-    }*/
-
     /* ######## liked_msg ########### */
 
     .liked_msg_left {
@@ -2663,12 +2484,6 @@
         place-self: end;
         margin-right: -2px;
     }
-
-    /*.chat-body .answer.right .text:before {
-        right: -29px;
-        border-left-color: #682960;
-        border-left-width: 12px;
-    }*/
 
     /*Delete Msg Field*/
     .delete_msg {
@@ -2852,38 +2667,8 @@
         position: relative;
     }
 
-    /*.right_message_mid .text:before {
-        right: -29px;
-        border-left-color: #682960;
-        border-left-width: 12px;
-    }*/
-
     /****************End Mid********************/
 
     /* ##################################################################### */
 
 }
-
-/*
-.firstMsgUser1 {
-    border: 1px solid blue;
-}
-
-.midMsgUser1 {
-    border: 1px solid green;
-}
-
-.lastMsgUser1 {
-    border: 1px solid red;
-}
-
-.firstMsgUser2 {
-    border: 3px solid orange;
-}
-
-.midMsgUser2 {
-    border: 3px solid green;
-}
-.lastMsgUser2 {
-    border: 3px solid red;
-}*/
